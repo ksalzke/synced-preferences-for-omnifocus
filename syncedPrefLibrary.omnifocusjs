@@ -4,7 +4,7 @@
 "type": "library",
 "targets": ["omnifocus"],
 "identifier": "com.KaitlinSalzke.syncedPrefLibrary",
-"version": "1.0"
+"version": "2.0.0"
 }*/
 
 (() => {
@@ -26,12 +26,12 @@
       return JSON.parse(note)
     }
 
-    readPref (key) {
+    read (key) {
       const prefs = this.getPreferences()
       return prefs[key]
     }
 
-    writePref (key, value) {
+    write (key, value) {
       const prefs = this.getPreferences()
       prefs[key] = value
       this.getPrefTask().note = JSON.stringify(prefs)
