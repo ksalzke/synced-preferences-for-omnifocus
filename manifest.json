@@ -3,7 +3,7 @@
   "identifier": "com.KaitlinSalzke.SyncedPrefLibrary",
   "author": "Kaitlin Salzke",
   "description": "An OmniFocus plugin bundle to assist with the syncing of plugin preferences across devices.",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "actions": [],
   "libraries": [
     {
