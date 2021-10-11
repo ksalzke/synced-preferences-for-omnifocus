@@ -30,7 +30,7 @@
       this.getPrefTask().note = JSON.stringify(prefs)
     }
 
-    delete (key) {
+    remove (key) {
       const prefs = this.getPreferences()
       delete prefs[key]
       this.getPrefTask().note = JSON.stringify(prefs)
