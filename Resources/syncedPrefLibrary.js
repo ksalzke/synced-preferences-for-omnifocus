@@ -1,12 +1,5 @@
 /* global PlugIn Version projectsMatching Task*/
 /* eslint spaced-comment: ["error", "always", { "exceptions": ["{"] }] */
-/*{
-"type": "library",
-"targets": ["omnifocus"],
-"identifier": "com.KaitlinSalzke.syncedPrefLibrary",
-"version": "2.0.0"
-}*/
-
 (() => {
   const syncedPrefLibrary = new PlugIn.Library(new Version('1.0'))
 
