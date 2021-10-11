@@ -1,4 +1,4 @@
-/* global PlugIn Version projectsMatching Task*/
+/* global PlugIn Version Task folderNamed Folder Project */
 /* eslint spaced-comment: ["error", "always", { "exceptions": ["{"] }] */
 (() => {
   const syncedPrefLibrary = new PlugIn.Library(new Version('1.0'))
@@ -38,7 +38,13 @@
   }
 
   syncedPrefLibrary.getProj = function () {
-    return projectsMatching('⚙️ Synced Preferences')[0]
+    const folder = folderNamed('⚙️ Synced Preferences') || new Folder('⚙️ Synced Preferences')
+    const project = folder.projectNamed('⚙️ Synced Preferences') || new Project('⚙️ Synced Preferences', folder)
+
+    // drop folder if not already dropped
+    folder.active = false
+
+    return project
   }
 
   return syncedPrefLibrary
