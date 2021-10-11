@@ -29,6 +29,12 @@
       prefs[key] = value
       this.getPrefTask().note = JSON.stringify(prefs)
     }
+
+    delete (key) {
+      const prefs = this.getPreferences()
+      delete prefs[key]
+      this.getPrefTask().note = JSON.stringify(prefs)
+    }
   }
 
   syncedPrefLibrary.getProj = function () {
