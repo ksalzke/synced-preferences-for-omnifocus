@@ -21,7 +21,7 @@
 
     read (key) {
       const prefs = this.getPreferences()
-      return prefs[key]
+      return prefs[key] === undefined ? null : prefs[key]
     }
 
     write (key, value) {
