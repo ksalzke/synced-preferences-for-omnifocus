@@ -45,6 +45,17 @@
       else return value
     }
 
+    readDate (key) {
+      const value = this.read(key)
+      if (value === null) return null
+      if (isNaN(Date.parse(value))) return null
+      try {
+        return new Date(value)
+      } catch {
+        return null
+      }
+    }
+
     write (key, value) {
       const prefs = this.getPreferences()
       prefs[key] = value
