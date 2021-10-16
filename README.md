@@ -49,11 +49,31 @@ Creates a new SyncedPref instance, with the specified string as an identifier. _
 
 #### `.read (key)`
 
-Returns the previously stored value for the given key.
+Returns the previously stored value for the given key, or null if no value is stored.
+
+#### `.readBoolean (key)`
+
+Returns the previously stored value as a Boolean, or false if there is no stored value or it can't be converted to a Boolean.
+
+### `.readString (key)`
+
+Returns the previously stared value as a String, or null if there is no stored value or it is not a String.
+
+### `.readNumber (key)`
+
+Returns the previously stored value as a Number, or null if there is no stored value or it is not a Number.
+
+### `.readDate (key)`
+
+Returns the previously stored vaule as a Date, or null if there is no stored value or it cannot be converted to a Date.
+
+### `.readData (key)`
+
+Returns the previously stored value as a Data object, or null if there is no stored value or it cannot be read as a Data object.
 
 #### `.write (key, value)`
 
-Stores the specified key/value pair.
+Stores the specified key/value pair, or removes the pair if the value is null.
 
 #### `.remove (key)`
 

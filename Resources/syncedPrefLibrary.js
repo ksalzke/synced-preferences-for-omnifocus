@@ -1,4 +1,4 @@
-/* global PlugIn Version Task folderNamed Folder Project */
+/* global PlugIn Version Task folderNamed Folder Project Data */
 /* eslint spaced-comment: ["error", "always", { "exceptions": ["{"] }] */
 (() => {
   const syncedPrefLibrary = new PlugIn.Library(new Version('1.0'))
@@ -24,10 +24,55 @@
       return prefs[key] === undefined ? null : prefs[key]
     }
 
+    readBoolean (key) {
+      const value = this.read(key)
+      try {
+        return !!value
+      } catch {
+        return false
+      }
+    }
+
+    readString (key) {
+      const value = this.read(key)
+      if (Object.prototype.toString.call(value) === '[object String]') return value
+      else return null
+    }
+
+    readNumber (key) {
+      const value = this.read(key)
+      if (value === null || typeof (value) !== 'number') return null
+      else return value
+    }
+
+    readDate (key) {
+      const value = this.read(key)
+      if (value === null) return null
+      if (isNaN(Date.parse(value))) return null
+      try {
+        return new Date(value)
+      } catch {
+        return null
+      }
+    }
+
+    readData (key) {
+      const value = this.read(key)
+      if (value === null) return null
+      try {
+        return Data.fromString(value)
+      } catch {
+        return null
+      }
+    }
+
     write (key, value) {
       const prefs = this.getPreferences()
-      prefs[key] = value
-      this.getPrefTask().note = JSON.stringify(prefs)
+      if (value === null) this.remove(key)
+      else {
+        prefs[key] = value instanceof Data ? value.toString() : value
+        this.getPrefTask().note = JSON.stringify(prefs)
+      }
     }
 
     remove (key) {
