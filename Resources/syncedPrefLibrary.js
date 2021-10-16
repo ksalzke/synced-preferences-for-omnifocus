@@ -24,6 +24,15 @@
       return prefs[key] === undefined ? null : prefs[key]
     }
 
+    readBoolean (key) {
+      const value = this.read(key)
+      try {
+        return !!value
+      } catch {
+        return false
+      }
+    }
+
     write (key, value) {
       const prefs = this.getPreferences()
       prefs[key] = value
