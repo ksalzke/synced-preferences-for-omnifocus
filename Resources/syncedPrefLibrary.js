@@ -68,8 +68,11 @@
 
     write (key, value) {
       const prefs = this.getPreferences()
-      prefs[key] = value instanceof Data ? value.toString() : value
-      this.getPrefTask().note = JSON.stringify(prefs)
+      if (value === null) this.remove(key)
+      else {
+        prefs[key] = value instanceof Data ? value.toString() : value
+        this.getPrefTask().note = JSON.stringify(prefs)
+      }
     }
 
     remove (key) {

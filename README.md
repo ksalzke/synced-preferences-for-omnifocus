@@ -73,7 +73,7 @@ Returns the previously stored value as a Data object, or null if there is no sto
 
 #### `.write (key, value)`
 
-Stores the specified key/value pair.
+Stores the specified key/value pair, or removes the pair if the value is null.
 
 #### `.remove (key)`
 
