@@ -33,6 +33,12 @@
       }
     }
 
+    readString (key) {
+      const value = this.read(key)
+      if (Object.prototype.toString.call(value) === '[object String]') return value
+      else return null
+    }
+
     write (key, value) {
       const prefs = this.getPreferences()
       prefs[key] = value
