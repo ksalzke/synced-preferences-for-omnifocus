@@ -1,3 +1,17 @@
+# [4.3.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.2.0...v4.3.0) (2021-10-16)
+
+
+### Features
+
+* implement readBoolean ([ffc0da1](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/ffc0da1943ab1d95c678e883490175a46e09e351))
+* implement readData ([32224e5](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/32224e5ab921dfd2a0afb8347e3a2ce355a6c8be))
+* implement readDate ([99ad433](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/99ad43388cb0759bcf74d407d3deba4054132e53))
+* implement readNumber ([6cdd97c](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/6cdd97c340bddb1e54f481c35a0f407336aa47f3))
+* implement readString ([e097bf2](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/e097bf2b55b8a3f6104fac954a58cd1d3a2c594e))
+* remove pair if value passed to write is null ([4dc1406](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/4dc14061f0a210e6ba4a21fabb93b19919edc762))
+
+
+
 # [4.2.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.1.0...v4.2.0) (2021-10-16)
 
 
