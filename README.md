@@ -27,7 +27,7 @@ The library uses a project inside a dropped folder named `⚙️ Synced Preferen
 
 Each `SyncedPref` instance is stored as JSON in the note of a task whose name is the preference ID, specified on creation.
 
-The implementation is intended to mirror the existing `Preferences` class in the OmniFocus API as much as possible. _Note: not all methods have been implemented at this stage. For example, though `read` is implemented, the more specific `readBoolean`, `readString`, `readNumber` etc are not._
+The implementation is intended to mirror the existing `Preferences` class in the OmniFocus API as much as possible.
 
 # Actions
 
