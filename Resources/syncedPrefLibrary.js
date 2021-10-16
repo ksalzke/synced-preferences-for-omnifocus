@@ -1,4 +1,4 @@
-/* global PlugIn Version Task folderNamed Folder Project */
+/* global PlugIn Version Task folderNamed Folder Project Data */
 /* eslint spaced-comment: ["error", "always", { "exceptions": ["{"] }] */
 (() => {
   const syncedPrefLibrary = new PlugIn.Library(new Version('1.0'))
@@ -56,9 +56,19 @@
       }
     }
 
+    readData (key) {
+      const value = this.read(key)
+      if (value === null) return null
+      try {
+        return Data.fromString(value)
+      } catch {
+        return null
+      }
+    }
+
     write (key, value) {
       const prefs = this.getPreferences()
-      prefs[key] = value
+      prefs[key] = value instanceof Data ? value.toString() : value
       this.getPrefTask().note = JSON.stringify(prefs)
     }
 
