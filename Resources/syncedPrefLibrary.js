@@ -86,8 +86,9 @@
     const folder = folderNamed('⚙️ Synced Preferences') || new Folder('⚙️ Synced Preferences')
     const project = folder.projectNamed('⚙️ Synced Preferences') || new Project('⚙️ Synced Preferences', folder)
 
-    // drop folder if not already dropped
+    // drop folder if not already dropped, and make SAL
     folder.active = false
+    project.containsSingletonActions = true
 
     return project
   }
