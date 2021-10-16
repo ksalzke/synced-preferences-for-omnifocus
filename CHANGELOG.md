@@ -1,3 +1,12 @@
+# [4.2.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.1.0...v4.2.0) (2021-10-16)
+
+
+### Features
+
+* return null from read if key doesn't exist ([9312c32](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/9312c32676e952a042c3a3ca30d2e671788c6085))
+
+
+
 # [4.1.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.0.0...v4.1.0) (2021-10-11)
 
 
