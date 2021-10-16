@@ -39,6 +39,12 @@
       else return null
     }
 
+    readNumber (key) {
+      const value = this.read(key)
+      if (value === null || typeof (value) !== 'number') return null
+      else return value
+    }
+
     write (key, value) {
       const prefs = this.getPreferences()
       prefs[key] = value
