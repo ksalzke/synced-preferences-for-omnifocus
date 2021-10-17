@@ -33,7 +33,11 @@ The implementation is intended to mirror the existing `Preferences` class in the
 
 ## Show Synced Preferences
 
-This action navigates to the project used to store Synced Prefernces data, and makes it active so that the information is visible.
+This action navigates to the project used to store Synced Prefernces data, and makes its containing folder active so that the information is visible. This action is only available when no projects or tasks are selected (so that it is not shown on the share sheet on iOS)
+
+## Hide Synced Preferences
+
+This action sets the status of the synced preferences containing folder to dropped, so that it is not visible. This action is only available when the folder has an active status (i.e. its status is not set to dropped.)
 
 # Classes
 

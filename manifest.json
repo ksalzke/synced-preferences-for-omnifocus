@@ -5,7 +5,8 @@
   "description": "An OmniFocus plugin bundle to assist with the syncing of plugin preferences across devices.",
   "version": "4.4.0",
   "actions": [
-    { "identifier": "goToSyncedPrefProject"}
+    { "identifier": "goToSyncedPrefProject"},
+    { "identifier": "hideSyncedPrefProject"}
   ],
   "libraries": [
     {
