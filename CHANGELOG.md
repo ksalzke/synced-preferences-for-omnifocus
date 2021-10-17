@@ -1,3 +1,12 @@
+# [4.4.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.3.0...v4.4.0) (2021-10-17)
+
+
+### Features
+
+* use SAL instead of seq project ([d4a92f8](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/d4a92f87be9af89ccc1a668cce4ca2ec618ab0cd))
+
+
+
 # [4.3.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.2.0...v4.3.0) (2021-10-16)
 
 
