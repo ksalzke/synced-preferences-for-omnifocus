@@ -1,3 +1,14 @@
+# [4.5.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.4.0...v4.5.0) (2021-10-17)
+
+
+### Features
+
+* add 'Hide Synced Preferences' action ([ebd5350](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/ebd5350ca17737d4d8244e026d7cee0823e844c6))
+* add action to go to synced prefs ([30637ff](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/30637ffa4b37658c40475a6b3a25a111acece68b))
+* add SF Symbols for actions ([084820a](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/084820a5c58ade109bbece6ba3e9a7044df1028e))
+
+
+
 # [4.4.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.3.0...v4.4.0) (2021-10-17)
 
 
