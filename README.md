@@ -31,7 +31,9 @@ The implementation is intended to mirror the existing `Preferences` class in the
 
 # Actions
 
-This plug-in does not currently contain any actions.
+## Show Synced Preferences
+
+This action navigates to the project used to store Synced Prefernces data, and makes it active so that the information is visible.
 
 # Classes
 
