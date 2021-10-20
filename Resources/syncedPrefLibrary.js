@@ -83,8 +83,16 @@
   }
 
   syncedPrefLibrary.getProj = function () {
-    const folder = folderNamed('⚙️ Synced Preferences') || new Folder('⚙️ Synced Preferences')
-    const project = folder.projectNamed('⚙️ Synced Preferences') || new Project('⚙️ Synced Preferences', folder)
+    const name = '⚙️ Synced Preferences'
+
+    const createFolder = () => {
+      const created = new Folder(name)
+      created.active = false
+      return created
+    }
+    const folder = folderNamed(name) || createFolder()
+
+    const project = folder.projectNamed(name) || new Project(name, folder)
 
     // make SAL
     project.containsSingletonActions = true
