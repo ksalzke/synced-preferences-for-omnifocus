@@ -27,8 +27,16 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Conventional Changelog Action
+
         uses: TriPSs/conventional-changelog-action@v3
         with:
-          version-file: manifest.json
+          version-file: SyncedPreferences.omnifocusjs/manifest.json
           release-count: 0
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag }}
+          body: ${{ steps.changelog.outputs.clean_changelog }}
           

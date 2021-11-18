@@ -12,14 +12,13 @@ _Please note that all scripts on my GitHub account (or shared elsewhere) are wor
 
 ## Known issues
 
-Refer to the 'issues' in this repo for any known issues and planned changes/enhancements.
+Refer to ['issues'](https://github.com/ksalzke/synced-preferences-for-omnifocus/issues) for known issues and planned changes/enhancements.
 
 # Installation & Set-Up
 
-1. Click on the green `Clone or download` button above to download a `.zip` file of all the files in this GitHub repository.
+1. Download the [latest release](https://github.com/ksalzke/synced-preferences-for-omnifocus/releases/latest).
 2. Unzip the downloaded file.
-3. Rename the entire folder to anything you like, with the extension `.omnifocusjs`
-4. Move the resulting file to your OmniFocus plug-in library folder.
+3. Move the `.omnifocusjs` file to your OmniFocus plug-in library folder (or open it to install).
 
 ## '⚙️ Synced Preferences' Storage
 
@@ -28,6 +27,25 @@ The library uses a project inside a dropped folder named `⚙️ Synced Preferen
 Each `SyncedPref` instance is stored as JSON in the note of a task whose name is the preference ID, specified on creation.
 
 The implementation is intended to mirror the existing `Preferences` class in the OmniFocus API as much as possible.
+
+## Example Usage
+
+```
+// load the library
+const syncedPrefsLib = PlugIn.find('com.KaitlinSalzke.SyncedPrefLibrary').library('syncedPrefLibrary')
+
+// load the SyncedPref class
+const SyncedPref = syncedPrefsLib.SyncedPref
+
+// create a synced preferences instance for reading/writing preferences
+const syncedPrefs = new SyncedPref('com.CompanyName.PluginName')
+
+// write a preference
+syncedPrefs.write('myFirstPreferenceSet', true)
+
+// read a preference
+const prefResult = syncedPrefs.read('myFirstPreferenceSet')
+```
 
 # Actions
 
