@@ -5,7 +5,9 @@ This is an Omni Automation plug-in bundle for OmniFocus that is intended to allo
 There is an existing [`Preferences`](https://omni-automation.com/shared/preferences.html) class in the OmniFocus API, however these preferences are local to the device.
 
 _Credit:_
+
 * The idea for this script came from Tristan Pratt (@prat0088) on the OmniFocus Slack channel.
+
 * The use of a dropped folder to store the preferences comes courtesy of the same implementation in Curt Clifton's [Populate Template Placeholders](http://curtclifton.net/poptemp) AppleScript.
 
 _Please note that all scripts on my GitHub account (or shared elsewhere) are works in progress. If you encounter any issues or have any suggestions please let me know--and do please make sure you backup your database before running scripts from an amateur on the internet!)_
