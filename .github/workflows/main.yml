@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Conventional Changelog Action
-
+        id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
           version-file: SyncedPreferences.omnifocusjs/manifest.json
