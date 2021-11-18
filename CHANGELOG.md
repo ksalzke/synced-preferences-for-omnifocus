@@ -1,3 +1,12 @@
+# [4.6.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.5.0...v4.6.0) (2021-11-18)
+
+
+### Features
+
+* restructure for easier installation ([edbf901](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/edbf90113824497e10879a439dd9957d43bfc7dd))
+
+
+
 # [4.5.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.4.0...v4.5.0) (2021-10-17)
 
 
