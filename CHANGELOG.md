@@ -1,3 +1,14 @@
+# [4.7.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.6.0...v4.7.0) (2022-02-09)
+
+
+### Features
+
+* :lipstick: improve display of synced prefs project from 'go to' action ([362817d](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/362817debb67530c0bd59fe18742bf8f1aa2ced2))
+* :lipstick: make 'show synced preferences' always available ([1975962](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/1975962cd5e25be7ca3f44f3f5ef0eac2b05827b))
+* :sparkles: allow '⚙️ Synced Preferences' folder to be moved within OF database ([8a5fd0b](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/8a5fd0b570c954706cf5ce6bd1c4d41f4afb5480))
+
+
+
 # [4.6.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.5.0...v4.6.0) (2021-11-18)
 
 
