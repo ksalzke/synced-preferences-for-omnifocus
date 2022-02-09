@@ -13,8 +13,7 @@
   })
 
   action.validate = function (selection, sender) {
-    // only show when nothing is selected (so doesn't show in share sheet on iOS)
-    return selection.tasks.length === 0 && selection.projects.length === 0
+    return true
   }
 
   return action
