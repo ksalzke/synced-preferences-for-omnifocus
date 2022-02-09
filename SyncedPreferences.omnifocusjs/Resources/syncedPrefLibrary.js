@@ -90,7 +90,7 @@
       created.active = false
       return created
     }
-    const folder = flattenedFolders.byName(name) || createFolder()
+    const folder = folderNamed(name) || createFolder()
 
     const project = folder.projectNamed(name) || new Project(name, folder)
 
