@@ -1,3 +1,12 @@
+## [4.7.1](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.7.0...v4.7.1) (2022-02-09)
+
+
+### Reverts
+
+* Revert "feat: :sparkles: allow '⚙️ Synced Preferences' folder to be moved within OF database" ([5266359](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/52663598f1c7c6bece588175d59ce59ccd0ecf1b))
+
+
+
 # [4.7.0](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.6.0...v4.7.0) (2022-02-09)
 
 
