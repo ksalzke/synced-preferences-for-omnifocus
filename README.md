@@ -1,6 +1,6 @@
 # About
 
-This is an Omni Automation plug-in bundle for OmniFocus that is intended to allow preferences for other plugins to be synced between devices.
+This is an Omni Automation plug-in bundle for OmniFocus that is intended to allow preferences for other plug-ins to be synced between devices.
 
 There is an existing [`Preferences`](https://omni-automation.com/shared/preferences.html) class in the OmniFocus API, however these preferences are local to the device.
 
@@ -24,7 +24,7 @@ Refer to ['issues'](https://github.com/ksalzke/synced-preferences-for-omnifocus/
 
 ## '⚙️ Synced Preferences' Storage
 
-The library uses a project inside a dropped folder named `⚙️ Synced Preferences` to store any preferences, which is then synced using the regular OmniFocus sync method (like any other projects and tasks in the database would be). This is created automatically by the plugin when it is needed.
+The library uses a project inside a dropped folder named `⚙️ Synced Preferences` to store any preferences, which is then synced using the regular OmniFocus sync method (like any other projects and tasks in the database would be). This is created automatically by the plug-in when it is needed.
 
 Each `SyncedPref` instance is stored as JSON in the note of a task whose name is the preference ID, specified on creation.
 
@@ -61,7 +61,7 @@ This action sets the status of the synced preferences containing folder to dropp
 
 # Classes
 
-This plugin contains the following class within the `syncedPrefLibrary` library:
+This plug-in contains the following class within the `syncedPrefLibrary` library:
 
 ## SyncedPref
 
@@ -115,7 +115,7 @@ Returns a `JSON` object containing the preferences from the SyncedPref instance.
 
 # Functions
 
-This plugin contains the following function within the `syncedPrefLibrary` library:
+This plug-in contains the following function within the `syncedPrefLibrary` library:
 
 ## `getProj ()`
 
