@@ -1,3 +1,12 @@
+## [4.7.2](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.7.1...v4.7.2) (2022-02-23)
+
+
+### Bug Fixes
+
+* :bug: make parent folder active rather than project so that information is visible when shown ([33524ff](https://github.com/ksalzke/synced-preferences-for-omnifocus/commit/33524fff77ffa37da1cd868c1f8370b61516ef20))
+
+
+
 ## [4.7.1](https://github.com/ksalzke/synced-preferences-for-omnifocus/compare/v4.7.0...v4.7.1) (2022-02-09)
 
 
