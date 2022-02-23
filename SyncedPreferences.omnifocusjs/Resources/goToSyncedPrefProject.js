@@ -11,7 +11,7 @@
 
     syncedPrefProject.parentFolder.active = true // so that information is visible when shown
     const urlStr = 'omnifocus:///task/' + syncedPrefProject.id.primaryKey
-    URL.fromString(urlStr).call(() => {})
+    URL.fromString(urlStr).open()
 
     // set focus - Mac only as focus not yet supported on iOS API
     if (Device.current.mac) {
