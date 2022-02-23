@@ -9,7 +9,7 @@
       await document.newTabOnWindow(document.windows[0]) 
     } else await document.newWindow()
 
-    syncedPrefProject.active = true // so that information is visible when shown
+    syncedPrefProject.parentFolder.active = true // so that information is visible when shown
     const urlStr = 'omnifocus:///task/' + syncedPrefProject.id.primaryKey
     URL.fromString(urlStr).call(() => {})
 
