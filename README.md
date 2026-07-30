@@ -1,3 +1,16 @@
+> [!WARNING]
+> Deprecated
+> This plug-in is deprecated and is no longer maintained.
+> OmniFocus includes a built-in synced Settings class, which plug-ins can use to store values that are shared between devices. This removes the need for the workaround provided by this plug-in.
+> For example:
+> ```
+> settings.setBoolForKey(true, 'test-setting')
+> settings.boolForKey('test-setting')
+> ```
+> The second line returns 'true' on all synced devices.
+> 
+>This repository remains available for reference, but its use is no longer recommended.
+
 # About
 
 This is an Omni Automation plug-in bundle for OmniFocus that is intended to allow preferences for other plug-ins to be synced between devices.
